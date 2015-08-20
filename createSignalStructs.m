@@ -16,18 +16,11 @@ function [signalStructs, signalInforms]= createSignalStructs
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %PART1: user setting
-shotNumbers = [56603];
-signalNames = {'pcrl01','lmsr','lmsz','pcic1','plhi1','plhi2'};
-mdsTrees = {'pcs_east','pcs_east','pcs_east','pcs_east','east_1','east_1'};
-plotColors= ['red']; % number of plotColors should consistent with shotNumbers
-lineWidths = 3;
-idxSubplots = [];
-signalYlabels = {'IP [kA]','R[m]','Z[m]', 'IC [kA]','LHW(2.45G)[MW]','LHW(4.6G)[MW]'};
-signalScales = {1e-3, 1, 1, 1e-3, 1e-3, 1e-3};
+signalInformation_script
 
 mdsServer = '202.127.204.12';
 
-
+%%---------------------- Don't change the following content --------------
 %PART2: create structure.
 numSignals = length(signalNames);
 
